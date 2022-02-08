@@ -76,4 +76,7 @@ https://blog.csdn.net/weixin_45819748/article/details/111991269
 [官网教程](https://www.itxst.com/vue-draggable/fueijmfy.html)
 https://www.itxst.com/vue-draggable/fueijmfy.html
 
-2、大转盘
+### 大转盘
+[大转盘样式原文地址](https://blog.csdn.net/lgno2/article/details/111771997) 
+https://blog.csdn.net/lgno2/article/details/111771997
+
