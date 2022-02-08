@@ -1,7 +1,6 @@
 <template>
 	<div class="turntable">
 
-<div class="top"></div>
 		<div class="wrap">
 			<div class="left">
 				<div class="item" :style="{'transform':`rotate(${index*45}deg)`}"
@@ -40,12 +39,6 @@
 		align-items: center;
 	}
 
-	.top{
-		width:750px;
-		height:50px;
-		background: #000;
-	}
-
 	.wrap {
 		width: 500px;
 		height: 500px;
@@ -74,7 +67,7 @@
 		width: 250px;
 		height:500px;
 		border: 1px solid yellow;
-		background: grey;
+		background: red;
 		position: absolute;
 		transform-origin: right center;
 	}
