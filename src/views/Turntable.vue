@@ -11,7 +11,11 @@
 		<div class="light"></div>
 		<div class="light"></div>
 		<div class="panel">
-			<div class="sector" v-for="(item,index) in data" :key="index">
+			<div class="sector" v-for="(item,index) in data" :key="index"
+			>
+			
+			<!-- 			:style="{'transform':`rotate(${index*36-18})`}"
+ -->
 				<div class="sector-inner"><span>{{item}}</span></div>
 			</div>
 			<!-- <div class="sector">
@@ -50,7 +54,7 @@ export default {
 	name: 'Turntable',
 	data() {
 		return {
-			data: ["谢谢参与","50 积分","谢谢参与","100 积分","谢谢参与","150 积分","谢谢参与","200 积分","谢谢参与","250 积分"]
+			data: ["谢谢参与","50 积分","谢谢参与","100 积分","谢谢参与","150 积分","谢谢参与","500 积分","谢谢参与","250 积分"]
 		};
 	}
 };
@@ -65,28 +69,32 @@ export default {
 }
 .wrapper {
 	position: relative;
-	height: 200px;
-	width: 200px;
-	padding: 20px;
+	height: 500px;
+	width: 500px;
+	// padding: 20px;
 	margin: 20px;
-	background-color: #c0381f;
+	// background-color: #c0381f;
 	box-shadow: #000000 0px 0px 10px;
 	border-radius: 50%;
+	border:20px solid yellow;
 }
 .light {
 	position: absolute;
-	height: 10px;
-	width: 10px;
+	height: 13px;
+	width: 13px;
 	border-radius: 50%;
-	top: 5px;
-	left: 115px;
-	transform-origin: 5px 115px;
+	top: 70px;
+	left: 50px;
+	z-index:999;
+	transform-origin: 200px 180px;
 }
 .light:nth-child(2n) {
-	background-color: #fafce7;
+	// background-color: #fafce7;
+	background: #000;
 }
 .light:nth-child(2n + 1) {
-	background-color: #ffe58b;
+	background: red;
+	// background-color: #ffe58b;
 }
 .light:nth-child(2) {
 	transform: rotate(36deg);
@@ -117,17 +125,17 @@ export default {
 }
 .panel {
 	position: relative;
-	height: 200px;
-	width: 200px;
+	height: 500px;
+	width: 500px;
 	background-color: #b7b7b7;
-	border-radius: 100px;
+	border-radius: 50%;
 	.sector {
 		position: absolute;
-		width: 100px;
-		height: 200px;
-		border-radius: 0px 100px 100px 0;
+		width: 500px;
+		height: 500px;
+		border-radius: 0px 250px 250px 0;
 		overflow: hidden;
-		left: 100px;
+		left: 250px;
 		top: 0px;
 		transform-origin: left center;
 
@@ -139,7 +147,7 @@ export default {
 			height: 195px;
 			transform: translateX(-100px) rotate(36deg);
 			transform-origin: right center;
-			border-radius: 100px 0 0 100px;
+			border-radius: 250px 0 0 250px;
 		}
 		.sector-inner span {
 			display: block;
