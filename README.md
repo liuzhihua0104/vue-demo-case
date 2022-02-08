@@ -24,6 +24,9 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
+### 如何用脚手架搭建项目，如何配置
+[原文地址](https://www.cnblogs.com/coober/p/10875647.html)
+https://www.cnblogs.com/coober/p/10875647.html
 
 ### 项目中引入rem
 1. 安装：
@@ -70,4 +73,7 @@ https://blog.csdn.net/weixin_45819748/article/details/111991269
 
 ### demo
 1、vue-dragable 拖拽
+[官网教程](https://www.itxst.com/vue-draggable/fueijmfy.html)
+https://www.itxst.com/vue-draggable/fueijmfy.html
+
 2、大转盘
