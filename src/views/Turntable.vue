@@ -78,6 +78,10 @@ export default {
       if (this.flag) {
         return;
       }
+	  this.timer=null;
+	  this.angle=0;
+	  this.deg=0;
+	  console.log("return")
       let random = parseInt(Math.random() * 8);
       let obj = new Map();
 
@@ -93,13 +97,14 @@ export default {
     },
 
     run() {
-      this.flat = true;
+      this.flag = true;
       let begin = 0;
       this.timer = setInterval(() => {
         if (begin >= this.basic + this.angle) {
-          this.flag = true;
+          this.flag = false;
           clearInterval(this.timer);
           this.timer = null;
+		
         }
         this.deg = begin;
         begin += 50;
