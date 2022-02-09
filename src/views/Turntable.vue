@@ -68,7 +68,7 @@ export default {
       ],
       flag: false,
       timer: null,
-      basic: 1800, //至少转几圈
+      basic: 3600, //至少转几圈
       angle: 0, //目标角度
       deg: 0, // 转盘实时旋转的角度
     };
@@ -100,14 +100,17 @@ export default {
       this.flag = true;
       let begin = 0;
       this.timer = setInterval(() => {
-        if (begin >= this.basic + this.angle) {
+        if (Math.ceil(begin) >= this.basic + this.angle) {
           this.flag = false;
           clearInterval(this.timer);
           this.timer = null;
 		
         }
-        this.deg = begin;
-        begin += 50;
+        this.deg = Math.ceil(begin);
+        // begin += 50;
+		// 缓动公式：（目标值-当前值）*系数
+
+		begin+=(this.basic+this.angle-begin)*0.1
       }, 50);
     },
   },
