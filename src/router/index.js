@@ -5,20 +5,21 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/vuedraggable',
-    name: 'VueDraggable',
+    path: "/vuedraggable",
+    name: "VueDraggable",
     // component: Home
-    component: () => import(/* webpackChunkName: "about" */ '../views/Vuedraggable.vue')
-
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Vuedraggable.vue"),
   },
   {
-    path: '/turntable',
-    name: 'Turntable',
+    path: "/turntable",
+    name: "Turntable",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Turntable.vue')
-  }
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Turntable.vue"),
+  },
 ];
 
 const router = new VueRouter({

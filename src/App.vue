@@ -4,8 +4,7 @@
       <router-link to="/vuedraggable">vuedraggable拖拽</router-link> |
       <router-link to="/turntable">turntable大转盘</router-link>
     </div>
-        <router-view />
-
+    <router-view />
   </div>
 </template>
 
@@ -45,7 +44,6 @@ body {
       flex: 1;
       width: 100%;
       background: green;
-      
     }
   }
 }
